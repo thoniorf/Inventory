@@ -1,0 +1,20 @@
+{
+  "name": "inventory",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Antonio Fortino <thoniorf@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
