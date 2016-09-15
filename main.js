@@ -19,7 +19,7 @@ app.on('ready', () => {
         icon: `${__dirname}/app/assets/bag.png`
     });
     win.setMenu(null);
-    
+
 
     // and load the index.html of the app.
     win.loadURL(`file://${__dirname}/app/index/index.html`);
@@ -51,4 +51,11 @@ app.on('activate', () => {
     if (win === null) {
         createWindow();
     }
+});
+
+// In main process.
+const {ipcMain} = require('electron');
+ipcMain.on('add-item', (event, arg) => {
+  console.log(arg);  // prints "ping"
+  event.sender.send('item-added', `okay ${arg}`);
 });
