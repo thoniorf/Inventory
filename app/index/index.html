@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Inventory</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="wrapper">
+    <header class="wrapper">
+        <img role="banner" src="../assets/bag.png" alt="Inventory" />
+        <h1>Inventory</h1>
+    </header>
+    <main class="wrapper" role="application">
+        <button data-action="insert" type="button" class="btn btn-lg btn-circle accent-color"><span class="glyphicon glyphicon-plus"></span></button>
+        <table id="itemsTable" class="table" role="grid" aria-labelledby="itemsTableCaption">
+            <caption id="itemsTableCaption">Available Items</caption>
+            <thead>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    <abbr title="Quantity">Qt.</abbr>
+                </th>
+                <th>
+                    Notes
+                </th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        Footer
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script>
+        window.$ = window.jQuery = require('../../bower_components/jquery/dist/jquery.min.js');
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
